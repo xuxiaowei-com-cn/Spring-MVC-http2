@@ -14,3 +14,18 @@
 - 从 8.5 版开始，Tomcat 支持 JDK 8（使用Tomcat Native）和 JDK 9（使用JSSE）的 HTTP/2，参见 [HTTP-2-support](https://github.com/spring-projects/spring-framework/wiki/HTTP-2-support) 。
 - 从 Tomcat 9 开始支持Servlet 4.0，参见 [HTTP-2-support](https://github.com/spring-projects/spring-framework/wiki/HTTP-2-support) 。
 
+## Tomcat 配置
+
+- 将 ssl/spring-boot-http2.jks 放入 tomcat目录/conf/ssl/spring-boot-http2.jks
+
+- 修改 tomcat目录/conf/server.xml
+~~~
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+           maxThreads="150" SSLEnabled="true">
+    <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
+    <SSLHostConfig>
+        <Certificate certificateKeystoreFile="conf/ssl/spring-boot-http2.jks"
+                     type="RSA" certificateKeystorePassword="xuxiaowei"/>
+    </SSLHostConfig>
+</Connector>
+~~~
