@@ -27,7 +27,7 @@ public class IndexController {
     @RequestMapping("/")
     public String index(HttpServletRequest request, HttpServletResponse response, Model model) {
 
-        return "index";
+        return "index.html";
     }
 
 }
