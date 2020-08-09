@@ -14,20 +14,20 @@
     - Project Structure
         - Project
             - Project SDK:
-                - 设置为 jdk 1.8
+                - 设置为 jdk 11
             
             - Project language level
-                - 设置为 jdk 1.8
+                - 设置为 jdk 11
 
         - Modules
             - 项目名
                 - Sources
                     - Language level
-                        - 设置为 jdk 1.8
+                        - 设置为 jdk 11
                 
                 - Dependencies
                     - Modele
-                        - 设置为 JDK 1.8
+                        - 设置为 JDK 11
 
 ## 文档
 
