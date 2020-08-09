@@ -1,5 +1,34 @@
 # spring-mvc-http2
 
+## IDEA 配置
+
+- File
+    - settings
+        - Build Execution Deployment
+            - Compiler
+                - Java Compiler
+                    - Pre-mode bytecode version:
+                        - Module
+                            - 删除本模块的 jdk
+
+    - Project Structure
+        - Project
+            - Project SDK:
+                - 设置为 jdk 1.8
+            
+            - Project language level
+                - 设置为 jdk 1.8
+
+        - Modules
+            - 项目名
+                - Sources
+                    - Language level
+                        - 设置为 jdk 1.8
+                
+                - Dependencies
+                    - Modele
+                        - 设置为 JDK 1.8
+
 ## 文档
 
 - [mvc-http2](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-http2)
