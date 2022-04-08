@@ -18,7 +18,7 @@
         <!-- Java 消息服务 -->
         <!-- 缓存、邮件、定时器、UI等等 -->
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-        <spring.version>5.2.8.RELEASE</spring.version>
+        <spring.version>5.3.18</spring.version>
 
     </properties>
 
